@@ -100,13 +100,16 @@
                 box.
               </p>
               <div class="d-flex flex-column flex-lg-row align-items-center">
-                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"
+                <a
+                  class="me-lg-3 mb-4 mb-lg-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#feedbackModal"
                   ><img
                     class="app-badge"
                     src="assets/img/google-play-badge.svg"
                     alt="..."
                 /></a>
-                <a href="#!"
+                <a data-bs-toggle="modal" data-bs-target="#feedbackModal"
                   ><img
                     class="app-badge"
                     src="assets/img/app-store-badge.svg"
@@ -384,18 +387,21 @@
     <section class="bg-gradient-primary-to-secondary" id="download">
       <div class="container px-5">
         <h2 class="text-center text-white font-alt mb-4">
-          Sign up to get the app!
+          Sign up to get free delivery!*
         </h2>
         <div
           class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
         >
-          <a class="me-lg-3 mb-4 mb-lg-0" href="#!"
+          <a
+            class="me-lg-3 mb-4 mb-lg-0"
+            data-bs-toggle="modal"
+            data-bs-target="#feedbackModal"
             ><img
               class="app-badge"
               src="assets/img/google-play-badge.svg"
               alt="..."
           /></a>
-          <a href="#!"
+          <a data-bs-toggle="modal" data-bs-target="#feedbackModal"
             ><img
               class="app-badge"
               src="assets/img/app-store-badge.svg"
@@ -413,7 +419,8 @@
           <span class="mx-1">&middot;</span>
           <a href="#!">Terms</a>
           <span class="mx-1">&middot;</span>
-          <a href="#!">FAQ</a> -->
+          <a href="#!">FAQ</a>
+          <a rel="me" href="https://mastodon.social/@Paztoya">Mastodon</a> -->
         </div>
       </div>
     </footer>
@@ -429,7 +436,7 @@
         <div class="modal-content">
           <div class="modal-header bg-gradient-primary-to-secondary p-4">
             <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">
-              SIGN UP
+              SIGN UP get free delivery* and be notified on appstore release.
             </h5>
             <button
               class="btn-close btn-close-white"
@@ -504,20 +511,7 @@
                     />
                     <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
                   </div>
-                  <div class="mc-field-group">
-                    <label for="mce-MESSAGE">Message </label>
-                    <input
-                      type="text"
-                      value=""
-                      name="MESSAGE"
-                      class=""
-                      id="mce-MESSAGE"
-                    />
-                    <span
-                      id="mce-MESSAGE-HELPERTEXT"
-                      class="helper_text"
-                    ></span>
-                  </div>
+
                   <div class="mc-field-group">
                     <label for="mce-MMERGE7"
                       >Zip Code <span class="asterisk">*</span>
@@ -532,6 +526,20 @@
                     />
                     <span
                       id="mce-MMERGE7-HELPERTEXT"
+                      class="helper_text"
+                    ></span>
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-MESSAGE">Message </label>
+                    <input
+                      type="text"
+                      value=""
+                      name="MESSAGE"
+                      class=""
+                      id="mce-MESSAGE"
+                    />
+                    <span
+                      id="mce-MESSAGE-HELPERTEXT"
                       class="helper_text"
                     ></span>
                   </div>
@@ -593,10 +601,10 @@
                 ftypes[4] = "phone";
                 fnames[5] = "BIRTHDAY";
                 ftypes[5] = "birthday";
-                fnames[6] = "MESSAGE";
-                ftypes[6] = "text";
-                fnames[7] = "MMERGE7";
-                ftypes[7] = "zip";
+                fnames[6] = "MMERGE7";
+                ftypes[6] = "zip";
+                fnames[7] = "MESSAGE";
+                ftypes[7] = "text";
               })(jQuery);
               var $mcj = jQuery.noConflict(true);
             </script>
